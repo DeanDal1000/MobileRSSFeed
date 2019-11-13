@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created By Dean John Dalzell-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/plannedrw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.example.ddalze200.courseworkv2.PlannedRoadWorksActivity">
+    <TextView
+        android:id="@+id/SelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="Choose"
+        />
+    <Button
+        android:id="@+id/getDateA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectDate"
+        android:layout_centerHorizontal="true"
+        android:text="CHOOSE"
+        />
+
+    <Button
+        android:id="@+id/getplannedroadworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/entText"
+        android:layout_marginTop="11dp"
+        android:text="Select"
+        android:layout_toStartOf="@+id/entText" />
+
+    <EditText
+        android:id="@+id/entText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Enter Name Of Roadwork"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/ListViewSelected"
+        android:layout_alignStart="@+id/getDateA" />
+
+    <ListView
+        android:id="@+id/plannedroadworksListView"
+        android:layout_width="350dp"
+        android:layout_height="425dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/getDateA"
+        android:layout_marginTop="95dp"
+        android:background="@android:color/holo_blue_dark"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:layout_alignParentEnd="true"></ListView>
+
+    <ListView
+        android:id="@+id/ListViewSelected"
+        android:layout_width="350dp"
+        android:layout_height="425dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/plannedroadworksListView"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_alignParentStart="true">
+
+    </ListView>
+
+
+</RelativeLayout>
